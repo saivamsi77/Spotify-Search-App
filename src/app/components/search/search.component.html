@@ -1,0 +1,38 @@
+<div class="main">
+    <h1 class="text-center mari">Spotify Angular </h1>
+    <div class="row nasdaq">
+        <div class="col-md-6 col-xs-12">
+            <h4>Search For the Music you Love !</h4>
+            <ul>
+                <li>Play the Moments</li>
+                <li>Pause the Memories</li>
+                <li>Stop the Pain</li>
+                <li>Rewind the Happiness</li>
+            </ul>
+        </div>
+        <div class="col-md-6 col-xs-12">
+            <img class="note" src="../../../assets/image/note.jpg" alt="music">
+        </div>
+    </div>
+    <form>
+        <div class="form-group">
+            <input type="text" (keyup)="searchMusic()" [(ngModel)]="searchStr" class="form-control" name="searchStr" placeholder="Search Music, Artist, Album">
+        </div>
+    </form>
+</div>
+
+<!--this is where it will all go -->
+
+<div *ngIf="searchRes">
+    <div *ngFor="let res of searchRes">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="search-res well">
+                    <h4><a routerLink="/artist/{{res.id}}">{{res.name}}</a></h4>
+                    <strong>Genres: </strong>
+                    <span *ngFor="let genre of res.genres">{{genre}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+.main {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nasdaq {
+    padding: 30px;
+}
+
+.nasdaq ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.nasdaq ul li {
+    text-decoration: none;
+    font-size: 1.6em;
+}
+
+.nasdaq h4 {
+    font-size: 1.6em;
+}
+
+.note {
+    width: 300px;
+}
+
+.form-control {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}

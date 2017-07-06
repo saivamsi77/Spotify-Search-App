@@ -1,0 +1,11 @@
+.navbar {
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar-brand:hover {
+    border-bottom: 2px solid lightgreen;
+}
+
+.nav li a:hover {
+    border-bottom: 1px solid whitesmoke;
+}
